@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes APP</title>
+    <link rel="shortcut icon" href="img/4338295.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome/all.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body" class="">
+    <section class="dailyQuotes d-flex align-items-center position-relative">
+        <div class="mode">
+            <a onclick="darkMode()" class="text-decoration-none text-center fs-1 ">
+                <i id="moonDark" class="fa-solid fa-moon d-block"></i>
+            </a>
+            <a onclick="lightMode()" class="text-decoration-none text-center fs-1 ">
+                <i id="sunLight" class="fa-solid fa-sun d-none"></i>
+            </a>
+        </div>
+        <div class="contentBox container mx-auto w-75 shadow-lg rounded-5 h-75 my-5 text-center position-relative">
+            <div class="staticContent">
+                <h1 class="title pt-5 display-2 fw-bolder">Quote of the Day</h1>
+                <h3 class="content my-2">Press the button below to recieve a random quote!</h3>
+                <button class="btn btn-outline-light  my-2 px-5 fs-4 mt-4" onclick="getQuote()">New quote</button>
+            </div>
+            <div class="dynamicContent my-4">
+                <h3 id="quotesPlace" class="quote display-5 fw-medium mb-3 mt-2 w-75 mx-auto ">
+                    <img src="img/js-javascript.gif" alt="I Love JS" class="w-50">
+                </h3>
+                <h5 id="quotesAuthor" class="author"></h5>
+            </div>
+            <div class="copySection position-absolute">
+                    <a id="copyButton" class="text-black text-decoration-none copyButton mt-4" onclick="copyQuote()">
+                        <i class="fa-solid fa-copy fs-4 border border-primary p-2 rounded-circle mx-1 copyIcon"></i>
+                    </a>
+            </div>
+        </div>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+</html>

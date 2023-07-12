@@ -1,0 +1,120 @@
+/* --------Global Variables---- */
+:root{
+    --bg-lg-color: linear-gradient(rgba(21, 1, 1, 0.393), rgba(255, 255, 255, 0.333));
+    --bg-cb-color: rgba(255, 253, 253, 0.784);
+    --btn-bg-color: linear-gradient(#A88A84, #8EB597);
+    --bg-black: black;
+    --bg-bg-icon: #A88A84;
+    --color-icon: white;
+}
+
+/* --------Dark Mode---------- */
+.mode
+{
+    position: absolute;
+    top: 18%;
+    left: 82%;
+    z-index: 9999;
+}
+
+.bdarkMode
+{
+    --bg-lg-color: linear-gradient(rgba(15, 1, 1, 0.848), rgba(22, 16, 16, 0.733));
+    --bg-cb-color: rgba(9, 4, 4, 0.897);
+    --btn-bg-color: linear-gradient(#f0e9e8, #36523c);
+    --bg-black: rgb(255, 255, 255);
+    --bg-bg-icon: #62504d;
+    --color-icon: rgb(0, 0, 0);
+}
+
+/* --------Header------------ */
+.dailyQuotes
+{
+    height: 100vh;
+    background-image: var(--bg-lg-color), url(../img/3379981.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* --------Content Box-------- */
+.contentBox
+{
+    background-color: var(--bg-cb-color, rgba(255, 255, 255, 0.601) );
+}
+
+.title
+{
+    font-family: Impact, sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS' ;
+}
+
+
+.fa-moon
+{
+    color: var(--bg-black);
+}
+
+.fa-sun
+{
+    color: var(--bg-black);
+}
+
+.staticContent, .dynamicContent
+{
+    color: var(--bg-black);
+}
+
+.content
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.dailyQuotes .contentBox .quote
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn
+{
+    background: var(--btn-bg-color) !important;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.5s;
+}
+
+.btn:hover 
+{
+    color: var(--bg-black);
+    transform: translateY(-2px);
+}
+
+/* ---------Copy Section ------------- */
+.copySection
+{
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+
+.copyButton
+{
+    /* visibility: hidden; */
+    cursor: pointer;
+}
+
+.copyIcon
+{
+    color: var(--color-icon);
+    background-color: var(--bg-black);
+    transition: all 0.5s;
+}
+
+.copyIcon:hover
+{
+    color: white;
+    background-color: var(--bg-bg-icon);
+}
+
